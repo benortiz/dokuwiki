@@ -8,7 +8,4 @@ services:
       - '80:80'
       - '443:443'
     volumes:
-      - 'dokuwiki_data:/bitnami'
-volumes:
-  dokuwiki_data:
-    driver: local
+      - '~/dokuwiki:/bitnami'
