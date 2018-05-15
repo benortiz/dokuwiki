@@ -4,6 +4,7 @@ resource "digitalocean_droplet" "dokuwiki_docker" {
   region = "sfo2"
   size = "1gb"
   backups = true
+  user_data = "${file("user_data.sh")}"
   ssh_keys = [
     "${var.ssh_fingerprint}"
   ]
