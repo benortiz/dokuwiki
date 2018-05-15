@@ -1,2 +1,3 @@
+*.tfstate.backup
 local/
 infrastructure/.terraform
